@@ -8,4 +8,4 @@ rvm:
   - 2.6.0
 before_install: gem install bundler -v 1.11.2
 script:
-  - bundle exeec rspec
+  - bundle exec rspec
