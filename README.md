@@ -40,7 +40,7 @@ For example, [sequence diagram](http://plantuml.com/sequence-diagram):
 
 The diagram above will be rendered to:
 
-![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuL9GI4mkoIzI22rEBG9oW0Z4Kj2rK_2j34ujAijCJbMmKYX8BKhBByg5gCuiIon9HKXpAG11KMf9QL6UGabHAOYVaef5cKDgNWh8HW00)
+![](http://www.plantuml.com/plantuml/png/UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl)
 
 PlantUML web service expects compression of such diagrams into
 it's own format. The diagram above should be converted to
