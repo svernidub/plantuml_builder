@@ -11,3 +11,5 @@ rvm:
   - mruby-head
   - ironruby-head
 before_install: gem install bundler -v 1.11.2
+script:
+  - bundle exeec rspec
