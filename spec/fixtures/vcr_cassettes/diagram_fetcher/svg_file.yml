@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/svg/UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:8080
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - image/svg+xml
+      Expires:
+      - Thu, 14 Mar 2019 08:55:00 GMT
+      Date:
+      - Sat, 09 Mar 2019 08:55:00 GMT
+      Last-Modified:
+      - Sat, 09 Feb 2019 15:32:00 GMT
+      Cache-Control:
+      - public, max-age=432000
+      Etag:
+      - '"6f06nuKqlnJcMSyEDknJwgbRG00"'
+      X-Plantuml-Diagram-Description:
+      - "(2 participants)"
+      X-Powered-By:
+      - PlantUML Version 1.2019.01
+      X-Patreon:
+      - Support us on http://plantuml.com/patreon
+      X-Donate:
+      - http://plantuml.com/paypal
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Jetty(9.4.14.v20181114)
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><svg xmlns=\"http://www.w3.org/2000/svg\"
+        xmlns:xlink=\"http://www.w3.org/1999/xlink\" contentScriptType=\"application/ecmascript\"
+        contentStyleType=\"text/css\" height=\"251px\" preserveAspectRatio=\"none\"
+        style=\"width:152px;height:251px;\" version=\"1.1\" viewBox=\"0 0 152 251\"
+        width=\"152px\" zoomAndPan=\"magnify\"><defs><filter height=\"300%\" id=\"f1vmg4cj747zc2\"
+        width=\"300%\" x=\"-1\" y=\"-1\"><feGaussianBlur result=\"blurOut\" stdDeviation=\"2.0\"/><feColorMatrix
+        in=\"blurOut\" result=\"blurOut2\" type=\"matrix\" values=\"0 0 0 0 0 0 0
+        0 0 0 0 0 0 0 0 0 0 0 .4 0\"/><feOffset dx=\"4.0\" dy=\"4.0\" in=\"blurOut2\"
+        result=\"blurOut3\"/><feBlend in=\"SourceGraphic\" in2=\"blurOut3\" mode=\"normal\"/></filter></defs><g><rect
+        fill=\"#FFFFFF\" filter=\"url(#f1vmg4cj747zc2)\" height=\"29.1328\" style=\"stroke:
+        #A80036; stroke-width: 1.0;\" width=\"10\" x=\"97\" y=\"117.4297\"/><line
+        style=\"stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;\" x1=\"27\"
+        x2=\"27\" y1=\"86.2969\" y2=\"164.5625\"/><line style=\"stroke: #A80036; stroke-width:
+        1.0; stroke-dasharray: 5.0,5.0;\" x1=\"101.5\" x2=\"101.5\" y1=\"86.2969\"
+        y2=\"164.5625\"/><text fill=\"#000000\" font-family=\"sans-serif\" font-size=\"14\"
+        lengthAdjust=\"spacingAndGlyphs\" textLength=\"32\" x=\"8\" y=\"82.9951\">User</text><ellipse
+        cx=\"27\" cy=\"13\" fill=\"#FEFECE\" filter=\"url(#f1vmg4cj747zc2)\" rx=\"8\"
+        ry=\"8\" style=\"stroke: #A80036; stroke-width: 2.0;\"/><path d=\"M27,21 L27,48
+        M14,29 L40,29 M27,48 L14,63 M27,48 L40,63 \" fill=\"none\" filter=\"url(#f1vmg4cj747zc2)\"
+        style=\"stroke: #A80036; stroke-width: 2.0;\"/><text fill=\"#000000\" font-family=\"sans-serif\"
+        font-size=\"14\" lengthAdjust=\"spacingAndGlyphs\" textLength=\"32\" x=\"8\"
+        y=\"176.5576\">User</text><ellipse cx=\"27\" cy=\"189.8594\" fill=\"#FEFECE\"
+        filter=\"url(#f1vmg4cj747zc2)\" rx=\"8\" ry=\"8\" style=\"stroke: #A80036;
+        stroke-width: 2.0;\"/><path d=\"M27,197.8594 L27,224.8594 M14,205.8594 L40,205.8594
+        M27,224.8594 L14,239.8594 M27,224.8594 L40,239.8594 \" fill=\"none\" filter=\"url(#f1vmg4cj747zc2)\"
+        style=\"stroke: #A80036; stroke-width: 2.0;\"/><rect fill=\"#FEFECE\" filter=\"url(#f1vmg4cj747zc2)\"
+        height=\"30.2969\" style=\"stroke: #A80036; stroke-width: 1.5;\" width=\"83\"
+        x=\"58.5\" y=\"51\"/><text fill=\"#000000\" font-family=\"sans-serif\" font-size=\"14\"
+        lengthAdjust=\"spacingAndGlyphs\" textLength=\"69\" x=\"65.5\" y=\"70.9951\">MyService</text><rect
+        fill=\"#FEFECE\" filter=\"url(#f1vmg4cj747zc2)\" height=\"30.2969\" style=\"stroke:
+        #A80036; stroke-width: 1.5;\" width=\"83\" x=\"58.5\" y=\"163.5625\"/><text
+        fill=\"#000000\" font-family=\"sans-serif\" font-size=\"14\" lengthAdjust=\"spacingAndGlyphs\"
+        textLength=\"69\" x=\"65.5\" y=\"183.5576\">MyService</text><rect fill=\"#FFFFFF\"
+        filter=\"url(#f1vmg4cj747zc2)\" height=\"29.1328\" style=\"stroke: #A80036;
+        stroke-width: 1.0;\" width=\"10\" x=\"97\" y=\"117.4297\"/><polygon fill=\"#A80036\"
+        points=\"85,113.4297,95,117.4297,85,121.4297,89,117.4297\" style=\"stroke:
+        #A80036; stroke-width: 1.0;\"/><line style=\"stroke: #A80036; stroke-width:
+        1.0;\" x1=\"27\" x2=\"91\" y1=\"117.4297\" y2=\"117.4297\"/><text fill=\"#000000\"
+        font-family=\"sans-serif\" font-size=\"13\" lengthAdjust=\"spacingAndGlyphs\"
+        textLength=\"51\" x=\"34\" y=\"112.3638\">perform</text><polygon fill=\"#A80036\"
+        points=\"38,142.5625,28,146.5625,38,150.5625,34,146.5625\" style=\"stroke:
+        #A80036; stroke-width: 1.0;\"/><line style=\"stroke: #A80036; stroke-width:
+        1.0; stroke-dasharray: 2.0,2.0;\" x1=\"32\" x2=\"101\" y1=\"146.5625\" y2=\"146.5625\"/><text
+        fill=\"#000000\" font-family=\"sans-serif\" font-size=\"13\" lengthAdjust=\"spacingAndGlyphs\"
+        textLength=\"26\" x=\"44\" y=\"141.4966\">true</text><!--\n@startuml\r\nactor
+        User\r\n       User -> MyService : perform\r\n    activate MyService\r\n      return
+        true\r\n    deactivate MyService\r\n@enduml\r\n\nPlantUML version 1.2019.01(Sat
+        Feb 09 15:32:04 UTC 2019)\n(GPL source distribution)\nJava Runtime: OpenJDK
+        Runtime Environment\nJVM: OpenJDK 64-Bit Server VM\nJava Version: 1.8.0_181-8u181-b13-2~deb9u1-b13\nOperating
+        System: Linux\nOS Version: 4.9.49-moby\nDefault Encoding: UTF-8\nLanguage:
+        en\nCountry: null\n--></g></svg>"
+    http_version: 
+  recorded_at: Sat, 09 Mar 2019 08:54:57 GMT
+recorded_with: VCR 3.0.3
