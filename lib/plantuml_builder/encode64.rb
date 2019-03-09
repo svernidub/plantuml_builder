@@ -43,7 +43,7 @@ module PlantumlBuilder
       c4 = b3 & 0x3F
 
       [c1, c2, c3, c4].each do |c|
-        self.query += encode6bit(c & 0x3F)
+        self.query = query + encode6bit(c & 0x3F)
       end
     end
 

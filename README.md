@@ -1,5 +1,8 @@
 # PlantumlBuilder
 
+[![Gem Version](https://badge.fury.io/rb/plantuml_builder.svg)](https://badge.fury.io/rb/plantuml_builder)
+[![Build Status](https://travis-ci.com/svernidub/plantuml_builder.svg?branch=master)](https://travis-ci.com/svernidub/plantuml_builder)
+
 Gem to convet [PlantUML](http://plantuml.com) diagrams using plantuml.com or
 [local](https://hub.docker.com/r/plantuml/plantuml-server/) PlantUML server
 
