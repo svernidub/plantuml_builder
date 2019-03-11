@@ -35,6 +35,10 @@ module PlantumlBuilder
 
           process_file(file, dest_file)
         end
+
+      rescue Errno::EEXIST => e
+        puts e.message
+        exit(1)
       end
 
       def process_file(source, dest)
@@ -44,6 +48,9 @@ module PlantumlBuilder
         File.open(dest, 'w') do |file|
           file.write(format.new(*f).load)
         end
+      rescue Errno::ENOENT, Errno::EISDIR, SocketError => e
+        puts e.message
+        exit(1)
       end
 
       def format

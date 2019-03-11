@@ -42,7 +42,7 @@ module PlantumlBuilder
       end
 
       def endpoint
-        args_hash['<endpoint>']
+        args_hash['--endpoint']
       end
 
       private

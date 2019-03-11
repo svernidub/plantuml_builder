@@ -1,3 +1,5 @@
+require 'net/http'
+
 module PlantumlBuilder
   class DiagramFetcher
     def initialize(url)

@@ -15,14 +15,16 @@ Usage:
 
 
 Options:
-  -h --help     Show this screen.
-  --version     Show version.
-  -R            Recursively build folder.
+  -h --help                Show this screen.
+  --version                Show version.
+  -R                       Recursively build folder.
+  --endpoint=<endpoint>    URL of PlantUML endpoint
 
 DOCOPT
 
 CLI = true
 require 'plantuml_builder'
+
 begin
   args = PlantumlBuilder::Cli::Args.new(Docopt::docopt(doc))
   PlantumlBuilder::Cli::CliProcessor.new(args).process
