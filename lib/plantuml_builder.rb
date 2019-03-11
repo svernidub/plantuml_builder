@@ -7,5 +7,10 @@ require 'plantuml_builder/diagram_fetcher'
 require 'plantuml_builder/format'
 require 'plantuml_builder/formats'
 
+if defined?(CLI)
+  require 'plantuml_builder/cli/args'
+  require 'plantuml_builder/cli/cli_processor'
+end
+
 module PlantumlBuilder
 end

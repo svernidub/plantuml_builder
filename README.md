@@ -40,7 +40,7 @@ For example, [sequence diagram](http://plantuml.com/sequence-diagram):
 
 The diagram above will be rendered to:
 
-![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuL9GI4mkoIzI22rEBG9oW0Z4Kj2rK_2j34ujAijCJbMmKYX8BKhBByg5gCuiIon9HKXpAG11KMf9QL6UGabHAOYVaef5cKDgNWh8HW00)
+![](http://www.plantuml.com/plantuml/png/UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl)
 
 PlantUML web service expects compression of such diagrams into
 it's own format. The diagram above should be converted to
@@ -52,6 +52,29 @@ UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4
 Using `plantuml_builder` you can fetch rendered diagrams from specified server.
 
 Diagrams could be fetched as SVG, PNG, and TXT (ASCII-art) format.
+
+
+### Using as standalone app
+
+To build one diagram in SVG format from plantuml.com run:
+
+```bash
+$ plantuml_build png source_file.wsd destination_file.svg
+```
+
+If you need build whole directory, specify `-R` flag before source. To build it into PNG diagrams:
+
+```bash
+$ plantuml_build png -R src dest
+```
+
+If you want to use local server as endpoint, specify it with `--endpoint`:
+
+```bash
+$ plantuml_build txt source_file.wsd destination_file.txt --endpoint=http://localhost:8080
+```
+
+### Using as library
 
 First, receive diagram text (from WSD or other file format).
 
@@ -68,7 +91,7 @@ wsd = <<-WSD
 WSD
 ```
 
-### SVG
+#### SVG
 
 Fetch diagram as SVG:
 
@@ -82,7 +105,7 @@ to store it in version control system. So, `plantuml_builder` fixes it.
 Also, XML comment with description would be removed.
 
 
-### PNG
+#### PNG
 
 Fetch diagram as PNG:
 ```ruby
@@ -90,7 +113,7 @@ PlantumlBuilder::Formats::PNG.new(wsd).load
 => # diagram in PNG
 ```
 
-### TXT (ASCII-art)
+#### TXT (ASCII-art)
 
 ```ruby
 PlantumlBuilder::Formats::TXT.new(wsd).load

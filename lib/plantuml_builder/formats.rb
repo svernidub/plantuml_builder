@@ -14,7 +14,9 @@ module PlantumlBuilder
       end
 
       def make_diagram_versionable
-        self.data = data.split('>').join(">\n").gsub(/<!--.*-->/m, '')
+        self.data = data.split('>')
+                        .join(">\n")
+                        .gsub(/<!--[\s\S]*?-->/, '') + '>'
       end
     end
 
