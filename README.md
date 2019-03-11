@@ -53,6 +53,29 @@ Using `plantuml_builder` you can fetch rendered diagrams from specified server.
 
 Diagrams could be fetched as SVG, PNG, and TXT (ASCII-art) format.
 
+
+### Using as standalone app
+
+To build one diagram in SVG format from plantuml.com run:
+
+```bash
+$ plantuml_build png source_file.wsd destination_file.svg
+```
+
+If you need build whole directory, specify `-R` flag before source. To build it into PNG diagrams:
+
+```bash
+$ plantuml_build png -R src dest
+```
+
+If you want to use local server as endpoint, specify it with `--endpoint`:
+
+```bash
+$ plantuml_build txt source_file.wsd destination_file.txt --endpoint=http://localhost:8080
+```
+
+### Using as library
+
 First, receive diagram text (from WSD or other file format).
 
 ```ruby
@@ -68,7 +91,7 @@ wsd = <<-WSD
 WSD
 ```
 
-### SVG
+#### SVG
 
 Fetch diagram as SVG:
 
@@ -82,7 +105,7 @@ to store it in version control system. So, `plantuml_builder` fixes it.
 Also, XML comment with description would be removed.
 
 
-### PNG
+#### PNG
 
 Fetch diagram as PNG:
 ```ruby
@@ -90,7 +113,7 @@ PlantumlBuilder::Formats::PNG.new(wsd).load
 => # diagram in PNG
 ```
 
-### TXT (ASCII-art)
+#### TXT (ASCII-art)
 
 ```ruby
 PlantumlBuilder::Formats::TXT.new(wsd).load
