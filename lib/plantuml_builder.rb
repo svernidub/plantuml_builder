@@ -10,6 +10,7 @@ require 'plantuml_builder/formats'
 if defined?(CLI)
   require 'plantuml_builder/cli/args'
   require 'plantuml_builder/cli/cli_processor'
+  require 'plantuml_builder/cli/interface'
 end
 
 module PlantumlBuilder

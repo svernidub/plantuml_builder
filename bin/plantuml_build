@@ -2,32 +2,10 @@
 
 require 'bundler/setup'
 
-require 'docopt'
-
-doc = <<DOCOPT
-plantuml_build allows to build diagrams with PlantUML
-
-Usage:
-  #{__FILE__} (svg|png|txt) <source> <destination> [--endpoint=<endpoint>]
-  #{__FILE__} (svg|png|txt) -R <source_dir> <destination_dir> [--endpoint=<endpoint>]
-  #{__FILE__} -h | --help
-  #{__FILE__} --version
-
-
-Options:
-  -h --help                Show this screen.
-  --version                Show version.
-  -R                       Recursively build folder.
-  --endpoint=<endpoint>    URL of PlantUML endpoint
-
-DOCOPT
-
 CLI = true
 require 'plantuml_builder'
 
-begin
-  args = PlantumlBuilder::Cli::Args.new(Docopt::docopt(doc))
-  PlantumlBuilder::Cli::CliProcessor.new(args).process
-rescue Docopt::Exit => e
-  puts e.message
-end
+
+interface = PlantumlBuilder::Cli::Interface.new(__FILE__ )
+
+interface.run
