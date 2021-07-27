@@ -15,6 +15,7 @@ describe PlantumlBuilder::UrlBuilder do
 
     let(:url) do
       'http://localhost:8080/svg/' \
+      '~1' \
       'UDfJK70eBaaiAYdDpU5I08B4v9' \
       'By8eNGujGYC1S8G6m5NJi5tyhW' \
       'rAAopEHK1Ik5WjIYjFoYN9YEpB' \

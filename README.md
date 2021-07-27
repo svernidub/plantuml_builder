@@ -40,13 +40,13 @@ For example, [sequence diagram](http://plantuml.com/sequence-diagram):
 
 The diagram above will be rendered to:
 
-![](http://www.plantuml.com/plantuml/png/UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl)
+![](http://www.plantuml.com/plantuml/png/~1UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl)
 
 PlantUML web service expects compression of such diagrams into
 it's own format. The diagram above should be converted to
 
 ```
-UDfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl
+~1DfJK70eBaaiAYdDpU5I08B4v9By8eNGujGYC1S8G6m5NJi5tyhWrAAopEHK1Ik5WjIYjFoYN9YEpBB4abI40gZEejIIqg8yXPAYKeX8IYfMfGwfUIaWsm5R-2hl
 ```
 
 Using `plantuml_builder` you can fetch rendered diagrams from specified server.

@@ -7,7 +7,7 @@ module PlantumlBuilder
     end
 
     def build
-      "#{server}/#{format}/#{encoded}"
+      "#{server}/#{format}/~1#{encoded}"
     end
 
     private
